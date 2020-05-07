@@ -5,20 +5,27 @@
 <head>
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="images/planet.ico" type="image/x-icon"/>
-    <title>quiz-astronomia</title>
+    <title>Angielski</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Roboto+Mono:400,700&display=swap&subset=latin-ext"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika:400,700&display=swap&subset=latin-ext" rel="stylesheet">
 </head>
 
 <body>
     <section class="quiz" id="quiz">
-        <h2 class="quiz__header">Quiz</h2>
+        <nav class="quiz__nav">
+            <ul class="quiz__category">
+                <li class="quiz__category-item"><button class="quiz__category-button js-button-slowka">Słówka</button></li>
+                <li class="quiz__category-item"><button class="quiz__category-button js-button-words">Words</button></li>
+                <li class="quiz__category-item"><button class="quiz__category-button js-button-przyimki">Przyimki</button></li>
+                <li class="quiz__category-item"><button class="quiz__category-button js-button-prepositions">Prepositions</button></li>
+                <li class="quiz__category-item"><button class="quiz__category-button js-button-czasowniki-frazowe">Czasowniki frazowe</button></li>
+                <li class="quiz__category-item"><button class="quiz__category-button js-button-phrasal-verbs">Phrasal verbs</button></li>
+            </ul>
+        </nav>
         
         <div class="quiz__container js-quiz__container">
-        <button class="quiz__button button">START</button>
+            <p class="quiz__instruction">Wybierz kategorię z której chcesz rozwiązać test</p>
      </div>
     </section>
     <footer><div class="footer">&copy; 2020 K. Duda. All Rights Reserved.</div></footer>
