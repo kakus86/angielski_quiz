@@ -1,17 +1,22 @@
 * {
 	box-sizing: border-box;
 }
-
+:root{
+	--kolor-tla: #060e31;
+	--kolor-jasny: #e90e0e;
+	--kolor-ciemny: #2623e2;
+	--kolor-czcionki: #ffffff;
+}
 body {
 	padding: 0px;
 	margin: 0px;
 	font-family: 'Signika', sans-serif;
-	color: #ffffff;
-	background-color: #7a7a7a;
+	color: var(--kolor-czcionki);
+	background-color: var(--kolor-tla);
 }
 .quiz {
 	width: 100%;
-	min-height: 100vh;
+	min-height: 97vh;
 	padding:2vw 20vw;
 }
 .quiz__category{
@@ -27,11 +32,11 @@ body {
 .quiz__category-button{
 	padding: 5px;
 	width: 150px;
-	background-color: #872edb;
-	border: 2px solid #5f0a86;
+	background-color:var(--kolor-ciemny);
+	border: 2px solid var(--kolor-jasny);
 	border-radius: 5px;
 	cursor: pointer;
-	color: #ffffff;
+	color: var(--kolor-czcionki);
 	font-size: 15px;
 }
 .quiz__category-button:focus,
@@ -40,18 +45,17 @@ body {
 	outline: 0;
 }
 .quiz__category-button:hover{
-	background-color: #5f0a86;
+	background-color: var(--kolor-tla);
 }
 .quiz__container {
 	background-color: rgba(0, 0, 0, 0.5);
-	/*background-image: url("../images/background.jpg");Photo by Emily Wang on Unsplash*/
 	border-radius: 10px;
 	padding: 10px 15px;
 	width: 100%;
 	min-height: 400px;
 	height: max-content;
 	margin: 20px auto;
-	border: 2px solid #5f0a86;
+	border: 2px solid var(--kolor-jasny);
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -90,10 +94,10 @@ body {
 	animation: show 1s;
 }
 .quiz__option:hover{
-	color: #872edb;
+	color: var(--kolor-jasny);
 }
 :checked + span {
-	color: #5f0a86;
+	color: var(--kolor-ciemny);
   }
 
 .disabled {
@@ -145,11 +149,11 @@ body {
 	padding: 20px;
 	align-self: center;
 	border-radius: 10px;
-	border: 2px solid #5f0a86;
+	border: 2px solid var(--kolor-ciemny);
 	cursor: pointer;
 	font-size: 20px;
 	font-weight: bold;
-	color: #5f0a86;
+	color: var(--kolor-ciemny);
 	animation: show 1s;
 }
 .check:focus,
@@ -157,8 +161,8 @@ body {
 	outline: 0;
 }
 .check:hover{
-	background-color: #872edb;
-	color: #fff;
+	background-color: var(--kolor-tla);
+	color: var(--kolor-czcionki);
 }
 .koniec{
 	text-align: center;
@@ -166,4 +170,6 @@ body {
 }
 .footer{
 	text-align: center;
+	font-size: 12px;
+	height: 3vh;
 }
