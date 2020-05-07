@@ -68,7 +68,7 @@ body {
 	right: 0;
 	bottom: 0;
 	left:0;
-	background-image: url("../images/background2.jpg");/*Photo by Aron Van de Pol on Unsplash*/
+	background-image: url("background.jpg");/*Photo by Aron Van de Pol on Unsplash*/
 	background-size: cover;
 	background-position: bottom;
 	border-radius: 10px;
