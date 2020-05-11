@@ -31,7 +31,7 @@ body {
 }
 .quiz__category-button{
 	padding: 5px;
-	width: 150px;
+	width: 160px;
 	background-color:var(--kolor-ciemny);
 	border: 2px solid var(--kolor-jasny);
 	border-radius: 5px;
@@ -172,4 +172,34 @@ body {
 	text-align: center;
 	font-size: 12px;
 	height: 3vh;
+}
+@media(max-width:991px){
+.quiz{
+	padding: 5px;
+}
+.quiz__category-item{
+	margin: 5px;
+}
+.quiz__category-button{
+	font-size: 14px;
+}
+.quiz__container{
+	padding: 5px;
+}
+.quiz__question{
+	font-size: 25px;
+	margin: 10px;
+}
+.quiz__option{
+	font-size: 18px;
+}
+.massage{
+	width: unset;
+}
+.check{
+	padding: 15px;
+}
+.koniec{
+	font-size: 30px;
+}
 }
